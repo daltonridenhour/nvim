@@ -3,7 +3,7 @@ local builtin = require('telescope.builtin')
 local actions = require('telescope.actions')
 
 vim.keymap.set('n', '<leader>f', builtin.find_files, {})
-vim.keymap.set('n', '<leader>g', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>s', builtin.live_grep, {})
 vim.keymap.set('n', '<C-f>', builtin.find_files, {})
 vim.keymap.set('n', '<C-g>', builtin.live_grep, {})
 
@@ -22,7 +22,7 @@ telescope.setup{
         ["<C-f>"] = actions.close,
         ["<C-g>"] = actions.close,
         ["<leader>f"] = actions.close,
-        ["<leader>g"] = actions.close,
+        ["<leader>s"] = actions.close,
       }
     }
   }
