@@ -24,14 +24,47 @@
 -- Plug 'tpope/vim-commentary'
 -- Plug 'christoomey/vim-system-copy'
 -- Plug 'michaeljsmith/vim-indent-object'
+-- {
+-- 	'nvim-telescope/telescope.nvim', tag = '0.1.1',
+-- 	dependencies = { 'nvim-lua/plenary.nvim' }
+-- },
+--
+--  {
+--    'ibhagwan/fzf-lua',
+--    -- optional for icon support
+--    requires = { 'nvim-tree/nvim-web-devicons' }
+--  },
+--  'junegunn/fzf',
+--  'junegunn/fzf.vim',
 return {
 	"folke/neodev.nvim",
 	"folke/which-key.nvim",
+	"tpope/vim-vinegar",
+	"tpope/vim-surround",
+	"tpope/vim-fugitive",
+	'kshenoy/vim-signature',
+	-- 'tpope/vim-commentary',
+  'numToStr/Comment.nvim',
+	'michaeljsmith/vim-indent-object',
+	'theprimeagen/harpoon',
+  'mbbill/undotree',
+  'neovim/nvim-lspconfig',
+  'jose-elias-alvarez/null-ls.nvim',
+  'MunifTanjim/prettier.nvim',
+  'nvim-lua/plenary.nvim',
+  'nvim-tree/nvim-web-devicons',
+  'sharkdp/fd',
+  'BurntSushi/ripgrep',
+  --{
+  --  'ibhagwan/fzf-lua',
+  --  -- optional for icon support
+  --  requires = { 'nvim-tree/nvim-web-devicons' }
+  --},
+  --
+  {
+  	'nvim-telescope/telescope.nvim', tag = '0.1.1',
+  },
 	{ "folke/neoconf.nvim", cmd = "Neoconf" },
-	{
-		'nvim-telescope/telescope.nvim', tag = '0.1.1',
-		dependencies = { 'nvim-lua/plenary.nvim' }
-	},
 	{
 		'nvim-treesitter/nvim-treesitter', 
 		config = function()
@@ -45,10 +78,24 @@ return {
 			vim.cmd([[colorscheme vividchalk]])
 		end,
 	},
-	"tpope/vim-vinegar",
-	"tpope/vim-surround",
-	"tpope/vim-fugitive",
-	'kshenoy/vim-signature',
-	'tpope/vim-commentary',
-	'michaeljsmith/vim-indent-object',
+  {
+    'VonHeikemen/lsp-zero.nvim',
+    branch = 'v2.x',
+    dependencies = {
+        -- LSP Support
+        {'neovim/nvim-lspconfig'},             -- Required
+        {                                      -- Optional
+        'williamboman/mason.nvim',
+        build = function()
+          pcall(vim.cmd, 'MasonUpdate')
+        end,
+      },
+      {'williamboman/mason-lspconfig.nvim'}, -- Optional
+
+      -- Autocompletion
+      {'hrsh7th/nvim-cmp'},     -- Required
+      {'hrsh7th/cmp-nvim-lsp'}, -- Required
+      {'L3MON4D3/LuaSnip'},     -- Required
+    }
+  },
 }

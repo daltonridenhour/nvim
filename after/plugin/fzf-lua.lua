@@ -1,0 +1,11 @@
+-- local fzf = require('fzf-lua')
+-- vim.keymap.set('n', '<leader>f', function() fzf.files() end, { noremap = true, silent = true })
+-- vim.keymap.set('n', '<leader>g', function() fzf.grep({ search = '' }) end, { noremap = true, silent = true })
+-- 
+-- fzf.setup({
+--   keymap = {
+--     fzf = {
+--       ['CTRL-q'] = 'select-all+accept',
+--     },
+--   },
+-- })

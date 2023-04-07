@@ -18,3 +18,6 @@ vim.opt.hlsearch = true
 -- highlight Macro ctermfg=cyan
 -- highlight Special ctermfg=red
 		
+-- vim.g.prettier.config.single_quote = 'true'
+-- vim.g.prettier.config.trailing_comma = 'all'
+
