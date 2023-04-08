@@ -9,7 +9,7 @@ vim.opt.expandtab = true
 -- vim.opt.foldmethod = "indent"
 -- vim.opt.foldlevel = 99
 vim.opt.relativenumber = true
--- vim.opt.nu = "rnu"
+vim.opt.number = true
 vim.opt.incsearch = true
 vim.opt.hlsearch = true
 -- 

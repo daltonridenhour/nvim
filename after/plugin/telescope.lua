@@ -10,6 +10,12 @@ vim.keymap.set('n', '<C-g>', builtin.live_grep, {})
 
 telescope.setup{
   defaults = {
+    layout_strategy = 'vertical',
+    layout_config = {
+      vertical = {
+        mirror = true
+      }
+    },
     mappings = {
       i = {
         ["<C-n>"] = actions.cycle_history_next,
