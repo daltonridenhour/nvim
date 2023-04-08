@@ -57,6 +57,10 @@ return {
   'williamboman/mason.nvim',
   'williamboman/mason-lspconfig.nvim',
   'neovim/nvim-lspconfig',
+  'nvim-lualine/lualine.nvim',
+  'ellisonleao/gruvbox.nvim',
+  'folke/tokyonight.nvim',
+  'tanvirtin/monokai.nvim',
   --{
   --  'ibhagwan/fzf-lua',
   --  -- optional for icon support
@@ -73,11 +77,11 @@ return {
 			vim.cmd([[TSUpdate]])
 		end
 	},
-	{
-		"tpope/vim-vividchalk",
-		config = function()
-			-- load the colorscheme here
-			vim.cmd([[colorscheme vividchalk]])
-		end,
-	},
+	--{
+	--	"tpope/vim-vividchalk",
+	--	config = function()
+	--		-- load the colorscheme here
+	--		vim.cmd([[colorscheme vividchalk]])
+	--	end,
+	--},
 }
