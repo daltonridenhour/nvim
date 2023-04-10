@@ -1,6 +1,6 @@
 require('lualine').setup{
   options = {
-    theme = 'gruvbox'
+    theme = 'tokyonight-storm'
   },
   sections = {
     lualine_c = {

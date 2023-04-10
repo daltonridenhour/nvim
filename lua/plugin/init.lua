@@ -54,13 +54,19 @@ return {
   'nvim-tree/nvim-web-devicons',
   'sharkdp/fd',
   'BurntSushi/ripgrep',
-  'williamboman/mason.nvim',
-  'williamboman/mason-lspconfig.nvim',
-  'neovim/nvim-lspconfig',
   'nvim-lualine/lualine.nvim',
   'ellisonleao/gruvbox.nvim',
   'folke/tokyonight.nvim',
+  'navarasu/onedark.nvim',
   'tanvirtin/monokai.nvim',
+  -- LSP
+  'williamboman/mason.nvim',
+  'williamboman/mason-lspconfig.nvim',
+  'neovim/nvim-lspconfig',
+  'hrsh7th/nvim-cmp',
+  'hrsh7th/cmp-nvim-lsp',
+  'github/copilot.vim',
+  -- END LSP
   --{
   --  'ibhagwan/fzf-lua',
   --  -- optional for icon support
@@ -72,11 +78,18 @@ return {
   },
 	{ "folke/neoconf.nvim", cmd = "Neoconf" },
 	{
-		'nvim-treesitter/nvim-treesitter', 
+		'nvim-treesitter/nvim-treesitter',
 		config = function()
 			vim.cmd([[TSUpdate]])
 		end
 	},
+  -- neotree
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v2.x",
+  },
+  "MunifTanjim/nui.nvim",
+  -- end neotree
 	--{
 	--	"tpope/vim-vividchalk",
 	--	config = function()

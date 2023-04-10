@@ -7,7 +7,6 @@ vim.keymap.set('n', '<leader>s', builtin.live_grep, {})
 vim.keymap.set('n', '<C-f>', builtin.find_files, {})
 vim.keymap.set('n', '<C-g>', builtin.live_grep, {})
 
-
 telescope.setup{
   defaults = {
     layout_strategy = 'vertical',
