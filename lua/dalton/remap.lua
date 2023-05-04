@@ -1,24 +1,26 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader><leader>", vim.cmd.Ex)
+local keymap = vim.keymap;
 
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+keymap.set("n", "<leader><leader>", vim.cmd.Ex)
 
-vim.keymap.set("n", "J", "mzJ`z")
-vim.keymap.set("n", "<C-d>", "<C-d>zz")
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
-vim.keymap.set("n", "H", "Hzz")
-vim.keymap.set("n", "L", "Lzz")
-vim.keymap.set("n", "n", "nzzzv")
-vim.keymap.set("n", "N", "Nzzzv")
+keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
-vim.keymap.set("n", "<C-h>", "<C-w>h");
-vim.keymap.set("n", "<C-j>", "<C-w>j");
-vim.keymap.set("n", "<C-k>", "<C-w>k");
-vim.keymap.set("n", "<C-l>", "<C-w>l");
+keymap.set("n", "J", "mzJ`z")
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
+keymap.set("n", "H", "Hzz")
+keymap.set("n", "L", "Lzz")
+keymap.set("n", "n", "nzzzv")
+keymap.set("n", "N", "Nzzzv")
 
-vim.keymap.set("n", "ss", ":split<Return><C-w>w");
-vim.keymap.set("n", "sv", ":vsplit<Return><C-w>w");
+keymap.set("n", "<C-h>", "<C-w>h");
+keymap.set("n", "<C-j>", "<C-w>j");
+keymap.set("n", "<C-k>", "<C-w>k");
+keymap.set("n", "<C-l>", "<C-w>l");
+
+keymap.set("n", "ss", ":split<Return><C-w>w");
+keymap.set("n", "sv", ":vsplit<Return><C-w>w");
 
 -- vim.keymap.set("n", "<space>a", "za");
 

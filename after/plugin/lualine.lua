@@ -1,6 +1,6 @@
 require('lualine').setup{
   options = {
-    theme = 'tokyonight-storm'
+    theme = 'tokyonight'
   },
   sections = {
     lualine_c = {
