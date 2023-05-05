@@ -10,7 +10,7 @@ local on_attach = function(client, bufnr)
   local bufopts = { noremap = true, silent = true, buffer = bufnr }
 
   if (client.name == "tsserver") then
-    client.resolved_capabilities.document_formatting = false
+    client.server_capabilities.documentFormattingProvider = false
   end
 
   vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, bufopts)
@@ -19,6 +19,9 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
   vim.keymap.set('n', 'gr', require('telescope.builtin').lsp_references, bufopts)
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
+  vim.cmd [[ command! Format execute 'lua vim.lsp.buf.format()' ]]
+
+  vim.keymap.set('n', '<leader>p', ':Format<cr>', bufopts)
 end
 
 lspconfig.lua_ls.setup {
