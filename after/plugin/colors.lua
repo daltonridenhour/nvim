@@ -6,16 +6,18 @@
 --   }
 -- });
 -- vim.cmd([[colorscheme onedark]])
-require("tokyonight").setup({
-  -- use the night style
-  style = "storm",
-  -- disable italic for functions
-  -- Change the "hint" color to the "orange" color, and make the "error" color bright red
-  on_colors = function(colors)
-    colors.bg = "#000000"
-  end
-})
-vim.cmd[[colorscheme tokyonight-storm]]
+-- require("tokyonight").setup({
+--   -- use the night style
+--   style = "storm",
+--   -- disable italic for functions
+--   -- Change the "hint" color to the "orange" color, and make the "error" color bright red
+--   on_colors = function(colors)
+--     colors.bg = "#000000"
+--   end
+-- })
+-- vim.cmd[[colorscheme tokyonight-storm]]
+-- somewhere in your config:
+vim.cmd("colorscheme onedark_dark")
 -- require('onedark').setup {
 --     style  = 'deep',
 --     colors = {
