@@ -5,6 +5,13 @@ return {
 	"tpope/vim-surround",
 	"tpope/vim-fugitive",
 	"kshenoy/vim-signature",
+	{ "kevinhwang91/nvim-bqf", ft = "qf" },
+	{
+		"junegunn/fzf",
+		run = function()
+			vim.fn["fzf#install"]()
+		end,
+	},
 	"numToStr/Comment.nvim",
 	"michaeljsmith/vim-indent-object",
 	"theprimeagen/harpoon",
@@ -16,13 +23,13 @@ return {
 	"sharkdp/fd",
 	"BurntSushi/ripgrep",
 	"nvim-lualine/lualine.nvim",
-	"ellisonleao/gruvbox.nvim",
-	"folke/tokyonight.nvim",
+	-- "ellisonleao/gruvbox.nvim",
+	-- "folke/tokyonight.nvim",
 	{
 		"olimorris/onedarkpro.nvim",
 		priority = 1000, -- Ensure it loads first
 	},
-	"tanvirtin/monokai.nvim",
+	-- "tanvirtin/monokai.nvim",
 	-- LSP
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
@@ -32,6 +39,7 @@ return {
 	"hrsh7th/cmp-path",
 	"hrsh7th/cmp-cmdline",
 	"hrsh7th/cmp-nvim-lsp",
+	"https://git.sr.ht/~whynothugo/lsp_lines.nvim",
 	"hrsh7th/cmp-nvim-lua",
 	"saadparwaiz1/cmp_luasnip",
 	"L3MON4D3/LuaSnip",
