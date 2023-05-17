@@ -20,6 +20,7 @@ return {
 	"MunifTanjim/prettier.nvim",
 	"nvim-lua/plenary.nvim",
 	"nvim-tree/nvim-web-devicons",
+  "goolord/alpha-nvim",
 	"sharkdp/fd",
 	"BurntSushi/ripgrep",
 	"nvim-lualine/lualine.nvim",
