@@ -33,7 +33,18 @@ return {
 	-- LSP
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
-	"neovim/nvim-lspconfig",
+	{
+		"neovim/nvim-lspconfig",
+		dependencies = {
+			{
+				"SmiteshP/nvim-navbuddy",
+				dependencies = {
+					"SmiteshP/nvim-navic",
+					"MunifTanjim/nui.nvim",
+				},
+			},
+		},
+	},
 	"hrsh7th/nvim-cmp",
 	"hrsh7th/cmp-buffer",
 	"hrsh7th/cmp-path",
@@ -47,6 +58,8 @@ return {
 	"lewis6991/gitsigns.nvim",
 	"github/copilot.vim",
 	-- END LSP
+	"lukas-reineke/indent-blankline.nvim",
+	{ "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
 	{ "akinsho/toggleterm.nvim", version = "*", config = true },
 	{
 		"nvim-telescope/telescope.nvim",

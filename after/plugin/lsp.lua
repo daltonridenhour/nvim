@@ -3,6 +3,7 @@ require("mason").setup()
 require("mason-lspconfig").setup({
 	ensure_installed = { "lua_ls", "tsserver", "eslint" },
 })
+local navbuddy = require("nvim-navbuddy")
 
 local lsp_capabilities = require("cmp_nvim_lsp").default_capabilities()
 local lspconfig = require("lspconfig")
@@ -28,6 +29,7 @@ local on_attach = function(client, bufnr)
 	vim.cmd([[ command! Format execute 'lua vim.lsp.buf.format()' ]])
 
 	vim.keymap.set("n", "<leader>p", ":Format<cr>", bufopts)
+	navbuddy.attach(client, bufnr)
 end
 
 lspconfig.lua_ls.setup({

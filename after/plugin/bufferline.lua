@@ -1,0 +1,23 @@
+-- vim.opt.termguicolors = true
+-- require("bufferline").setup({
+-- 	-- options = {
+-- 	-- 	offsets = {
+-- 	-- 		{
+-- 	-- 			filetype = "NeoTree",
+-- 	-- 			text = "File Explorer",
+-- 	-- 			highlight = "Directory",
+-- 	-- 			separator = true, -- use a "true" to enable the default, or set your own character
+-- 	-- 		},
+-- 	-- 	},
+-- 	-- },
+-- })
+--
+-- --   These commands will navigate through buffers in order
+-- --   regardless of which mode you are using  e.g. if you change
+-- --   the order of buffers :bnext and :bprevious will not respect the custom ordering
+-- vim.keymap.set("n", "<leader>j", "<cmd>:BufferLineCycleNext<CR>")
+-- vim.keymap.set("n", "<leader>k", "<cmd>:BufferLineCyclePrev<CR>")
+--
+-- --   These commands will move the current buffer backwards or forwards in the bufferline
+-- vim.keymap.set("n", "<leader>bmk", "<cmd>:BufferLineMoveNext<CR>")
+-- vim.keymap.set("n", "<leader>bmj", "<cmd>:BufferLineMovePrev<CR>")
