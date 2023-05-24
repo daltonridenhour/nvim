@@ -10,6 +10,7 @@ local options = {
 	hlsearch = true,
 	cursorline = true,
 	guicursor = "",
+	signcolumn = "yes",
 }
 
 for k, v in pairs(options) do
