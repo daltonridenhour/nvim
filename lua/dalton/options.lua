@@ -16,3 +16,6 @@ local options = {
 for k, v in pairs(options) do
 	vim.opt[k] = v
 end
+
+vim.g.hardtime_default_on = 1
+vim.g.hardtime_maxcount = 10

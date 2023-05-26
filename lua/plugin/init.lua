@@ -1,4 +1,5 @@
 return {
+	"takac/vim-hardtime",
 	"folke/neodev.nvim",
 	"folke/which-key.nvim",
 	"tpope/vim-surround",
