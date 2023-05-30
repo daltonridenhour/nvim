@@ -71,6 +71,7 @@ return {
 			vim.cmd([[TSUpdate]])
 		end,
 	},
+	"nvim-treesitter/nvim-treesitter-textobjects",
 	-- neotree
 	{
 		"nvim-neo-tree/neo-tree.nvim",
