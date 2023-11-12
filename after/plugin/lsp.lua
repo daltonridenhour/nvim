@@ -25,17 +25,17 @@ local on_attach = function(client, bufnr)
     client.server_capabilities.documentFormattingProvider = false
   end
 
-  vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, bufopts)
-  vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, bufopts)
-  vim.keymap.set("n", "gd", vim.lsp.buf.definition, bufopts)
-  vim.keymap.set("n", "gi", vim.lsp.buf.implementation, bufopts)
-  vim.keymap.set("n", "gr", require("telescope.builtin").lsp_references, bufopts)
-  vim.keymap.set("n", "K", vim.lsp.buf.hover, bufopts)
+  vim.keymap.set("n", "<leader>in", vim.lsp.buf.rename, bufopts)
+  vim.keymap.set("n", "<leader>ia", vim.lsp.buf.code_action, bufopts)
+  vim.keymap.set("n", "id", vim.lsp.buf.definition, bufopts)
+  vim.keymap.set("n", "ii", vim.lsp.buf.implementation, bufopts)
+  vim.keymap.set("n", "ir", require("telescope.builtin").lsp_references, bufopts)
+  vim.keymap.set("n", "ih", vim.lsp.buf.hover, bufopts)
   vim.keymap.set("n", "<leader>dl", "<cmd>Telescope diagnostics<cr>", bufopts)
   vim.keymap.set("n", "<leader>dq", vim.lsp.diagnostic.set_loclist, bufopts)
   vim.cmd([[ command! Format execute 'lua vim.lsp.buf.format()' ]])
 
-  vim.keymap.set("n", "<leader>p", ":Format<cr>", bufopts)
+  -- vim.keymap.set("n", "<leader>p", ":Format<cr>", bufopts)
   navbuddy.attach(client, bufnr)
 end
 
